@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0f7df807f2.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+   <div class="wrapper">
+     <!-- Side bar -->
+     <aside id="sidebar">
+         <div class="h-100">
+            <div class="sidebar-100">
+                <div class="sidebar-logo">
+                    <a href="#" class="">BirukTafese</a>
+                </div>
+                <!-- Side bar Navigation -->
+                <ul class="sidebar-nav">
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="fa-solid fa-list"></i>
+                            Profile
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#dashboard" class="sidebar-link" data-bs-toggle="collapse" role="button" data-bs-target="#dashboard"
+                           aria-expanded="false" aria-controls="dashboard">
+                            <i class="fa-solid fa-sliders pe-2"></i>
+                            Dashboard
+                        </a>
+                        <div class="collapse" id="dashboard">
+                            <ul class="sidebar-dropdown list-unstyled">
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Analytics</a>
+                                </li>
+                                <li class "sidebar-item">
+                                    <a href="#" class="sidebar-link">Ecommerce</a>
+                                </li>
+                                <li class "sidebar-item">
+                                    <a href="#" class="sidebar-link">Economics</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#pages" class="sidebar-link" data-bs-toggle="collapse" role="button" data-bs-target="#pages"
+                           aria-expanded="false" aria-controls="pages">
+                            <i class="fa-regular fa-file-lines pe-2"></i>
+                            Pages
+                        </a>
+                        <div class="collapse" id="pages">
+                            <ul class="sidebar-dropdown list-unstyled">
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Analytics</a>
+                                </li>
+                                <li class "sidebar-item">
+                                    <a href="#" class="sidebar-link">Ecommerce</a>
+                                </li>
+                                <li class "sidebar-item">
+                                    <a href="#" class="sidebar-link">Economics</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+         </div>
+        </aside>
+
+        <!-- Main Component -->
+        <div class="main">
+            <nav class="navbar navbar-expand px-3 border-bottom">
+                <!-- Button for Sidebar toggle -->
+                <button class="btn" type="button" data-bs-theme="light" >
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+            </nav>
+        </div>
+   </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
