@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Layout</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <!-- Sidebar -->
+        <nav id="sidebar" class="col-md-3 col-lg-2 bg-dark d-md-block bg-light px-3 sidebar">
+            <!-- User Account Section -->
+            <div class="position-sticky">
+                <ul class="nav flex-column">
+                    <li class="nav-item m-3">
+                        <div class="d-flex flex-column align-items-center">
+                            <img id="user-photo" src="img/christian-buehner-84E44EdD18o-unsplash.jpg" alt="User Photo" class="img-fluid rounded-lg rounded-circle-sm">
+                            <p class="lead text-white ms-2 ms-md-0">John Doe</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="position-sticky">
+                <ul class="nav flex-column">
+                    <li class="nav-item m-3">
+                        <div class="d-flex flex-row align-items-center">
+                            <i class="bi bi-speedometer2 me-2 text-white"></i> <!-- Dashboard Icon -->
+                            <a id="dashboard" class="nav-link  text-white text-md text-md-start" href="#">
+                                Dashboard
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item m-3">
+                        <div class="d-flex flex-row align-items-center">
+                            <i class="bi bi-book text-white"></i>
+                            <a id="courses" class="nav-link text-white text-md text-md-start" href="#">
+                                Courses
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item m-3">
+                        <div class="d-flex flex-row align-items-center">
+                            <i class="bi bi-people-fill text-white"></i>
+                            <a id="students" class="nav-link text-white text-md text-md-start" href="#">
+                                Students
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item m-3">
+                        <div class="d-flex flex-row align-items-center">
+                            <i class="bi bi-person-circle text-white"></i>
+                            <a id="instructors" class="nav-link text-white text-md text-md-start" href="#">
+                                Instructors
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item m-3">
+                        <div class="d-flex flex-row align-items-center">
+                            <i class="bi bi-flag-fill text-white"></i>
+                            <a id="reports" class="nav-link text-white text-md text-md-start" href="#">
+                                Reports
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content Container -->
+        <div id="contents" class="col-md-9 col-lg-10">
+            <div id="dashboard-page" class="page">
+                <p class="lead">
+                    This is the Dashboard page. 
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, facere eum quidem quo soluta vitae eius voluptatem qui recusandae id. Velit illum modi soluta nihil ratione eveniet unde nobis deserunt.
+                </p>
+            </div>
+            
+            <div id="courses-page" class="page">
+                <!-- Content for the Courses page -->
+                <p class="lead">
+                    This is the Courses page. Replace this with your Courses content.
+                </p>
+            </div>
+
+            <!-- Create similar containers for Students, Instructors, and Reports pages -->
+            <p class="lead">
+                This is a placeholder for your content. Replace it with the actual content for other pages.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!--  JavaScript  -->
+<script>
+    // Get references to the page containers
+    const dashboardPage = document.getElementById('dashboard-page');
+    const coursesPage = document.getElementById('courses-page');
+    // Add similar references for Students, Instructors, and Reports pages
+// Function to show/hide pages based on the clicked link
+function showPage(pageId) {
+    // Hide all pages initially
+    const pages = document.querySelectorAll('.page');
+    pages.forEach(page => {
+        page.style.display = 'none';
+    });
+
+    // Show the selected page
+    const pageToShow = document.getElementById(pageId);
+    if (pageToShow) {
+        pageToShow.style.display = 'block';
+    }
+}
+
+// Add event listeners to the sidebar links
+document.getElementById('dashboard').addEventListener('click', () => showPage('dashboard-page'));
+document.getElementById('courses').addEventListener('click', () => showPage('courses-page'));
+// Add similar event listeners for Students, Instructors, and Reports links
+
+</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

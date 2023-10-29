@@ -1,0 +1,48 @@
+
+        /* Custom CSS to adjust the sidebar width and height */
+        #sidebar {
+            width: 40%;
+            height: 100vh;
+        }
+
+        /* Custom CSS for the user account section */
+        #user-account {
+            text-align: center;
+            padding: 20px;
+        }
+
+        #user-photo {
+            border: 4px solid #fff;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+        
+        .sidebar a {
+            color: white;
+        }
+        .sidebar .active {
+            font-weight: bold;
+        }
+        /* Custom style for small devices */
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 50px;
+                position: fixed;
+                height: 100vh;
+                left: 0;
+            }
+            .sidebar .nav-link {
+                text-align: center;
+            }
+            .sidebar .active {
+                font-weight: normal;
+            }
+            #contents {
+                padding: 56%;
+            }
+        }
+
+
+          
