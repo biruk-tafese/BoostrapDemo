@@ -1,0 +1,20 @@
+
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #f1f1f1;
+    overflow-y: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    color: black;
+  }
+  
